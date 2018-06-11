@@ -72,7 +72,7 @@
   padding: 18px 60px;
   border-radius: 50px;
   border: 0;
-  background-color: #ed7a82;
+  background-color: $primary;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
   transition: all 0.3s ease;
   @include media-breakpoint-up(md){
@@ -139,7 +139,7 @@
 }
 
 .service-section{
-  background-color: #ed7a82;
+  background-color: $primary;
   padding: 45px 0 90px;
 }
 .service-slider{
@@ -227,7 +227,7 @@
 .testimonial-rating{
   margin-bottom: 25px;
   i{
-    color: #ed7a82;
+    color: $primary;
     font-size: 32px;
     @include media-breakpoint-up(md){
       font-size: 28px;

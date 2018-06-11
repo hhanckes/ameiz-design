@@ -1,6 +1,11 @@
 footer{
   background-color: #4a4a4a;
   padding-top: 35px;
+  @include media-breakpoint-up(md){
+    position:absolute;
+    bottom:0;
+    width:100%;
+  }
 }
 .footer-title{
   font-size: 18px;

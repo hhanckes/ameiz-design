@@ -1,14 +1,25 @@
 .service-content-section{
   background-color: $white;
-  padding-top: 170px;
+  padding-top: 130px;
   padding-bottom: 130px;
+  @include media-breakpoint-up(md){
+    padding-top: 170px;
+    padding-bottom: 480px;
+  }
 }
 .page-title{
   font-family: $playfair;
-  font-size: 54px;
+  font-size: 34px;
   font-weight: 900;
   color: #4a4a4a;
-  margin-bottom: 65px;
+  margin-bottom: 20px;
+  @include media-breakpoint-up(md){
+    margin-bottom: 65px;
+    font-size: 45px;
+  }
+  @include media-breakpoint-up(lg){
+    font-size: 54px;
+  }
 }
 .service-title{
   font-size: 18px;
@@ -48,11 +59,12 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
-  color: #ed7a82;
+  color: $primary;
   margin-bottom: 40px;
   padding-left: 17px;
 }
 .nav-tabs-services{
+  margin-bottom: 20px;
   li{
     width: 100%;
     a{
@@ -101,13 +113,13 @@
   }
   .form-control{
     background-color: #ffffff;
-    border: solid 1px #ed7a82;
+    border: solid 1px $primary;
     font-family: $montserrat;
     font-size: 18px;
     color: #4a4a4a;
     padding-left: 5px;
     padding-right: 5px;
-    text-align: end;
+    text-align: center;
     line-height: 1.33;
     &:hover, &:focus, &:active{
       box-shadow: none;
@@ -116,9 +128,15 @@
   }
 }
 .btn-add-to-cart{
-  padding-left: 100px;
-  padding-right: 100px;
   line-height: 1.9;
+  width: 100%;
+  @include media-breakpoint-up(xs){
+    width: 100%;
+  }
+  @include media-breakpoint-up(md){
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 
@@ -128,7 +146,7 @@
  .card{
    border-radius: 2px;
    background-color: #ffffff;
-   border: solid 1px #ed7a82;
+   border: solid 1px $primary;
    margin-bottom: 16px;
    .card-header{
      background-color: transparent;
@@ -144,18 +162,25 @@
        &:hover, &:active, &:focus{
          text-decoration: none;
        }
+       &.btn-accordion-toggle{
+         width: 80%;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         text-align: left;
+       }
      }
    }
    &:first-of-type{
-     border: solid 1px #ed7a82;
+     border: solid 1px $primary;
      border-radius: 2px;
    }
    &:not(:first-of-type):not(:last-of-type){
-     border: solid 1px #ed7a82;
+     border: solid 1px $primary;
      border-radius: 2px;
    }
    &:last-of-type {
-     border: solid 1px #ed7a82;
+     border: solid 1px $primary;
      border-radius: 2px;
    }
  }
@@ -188,4 +213,36 @@
     }
   }
 
+}
+.select-label{
+  font-size: 16px;
+  line-height: 1.25;
+  color: #4a4a4a;
+}
+.check-icon{
+  font-size: 70px;
+  color: #7ed321;
+}
+.modal-p{
+  font-size: 18px;
+  color: #4a4a4a;
+}
+.modal-custom{
+  .modal-dialog{
+    @include media-breakpoint-up(xs){
+      max-width: auto;
+    }
+    @include media-breakpoint-up(sm){
+      max-width: 540px;
+    }
+    @include media-breakpoint-up(md){
+      max-width: 720px;
+    }
+    @include media-breakpoint-up(lg){
+      max-width: 960px;
+    }
+    @include media-breakpoint-up(xl){
+      max-width: 1140px;
+    }
+  }
 }

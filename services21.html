@@ -108,6 +108,7 @@
 <section class="service-content-section">
     <div class="container">
         <div class="row">
+            <!--Left Side Start-->
             <div class="col-md-4 left-side">
                 <h1 class="page-title">Manos y<br>Pies</h1>
                 <ul class="nav nav-tabs-services" id="myTab" role="tablist">
@@ -125,8 +126,12 @@
                     </li>
                 </ul>
             </div>
+            <!--Left Side End-->
+
+            <!--Right Side Start-->
             <div class="col-md-8 right-side">
                 <div class="tab-content" id="myTabContent">
+                    <!--Tab Item Start-->
                     <div class="tab-pane fade show active" id="manicure" role="tabpanel" aria-labelledby="manicure-tab">
                         <img class="img-fluid" src="images/services-default.png">
                         <h4 class="service-title">Manicure:</h4>
@@ -134,6 +139,7 @@
                         <p class="service-subtext">Nota: El servicio de retirado de esmalte permanente no tiene costo adicional, sin embargo debe ser avisado al agendar el servicio para considerar tiempo adicional.
                         </p>
 
+                        <!--Accordian Start-->
                         <div class="accordion service-accordion" id="accordion">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
@@ -160,11 +166,11 @@
                                         <label class="input-group-count-label">Cantidad</label>
                                         <div class="input-group input-group-count  mb-30">
                                             <div class="input-group-prepend">
-                                                <button class="btn btn-primary text-white" type="button" onclick="decreaseValue()">-</button>
+                                                <button class="btn btn-primary text-white" type="button">-</button>
                                             </div>
                                             <input type="number" class="form-control" id="count-input" value="0">
                                             <div class="input-group-append">
-                                                <button class="btn btn-primary text-white" type="button" onclick="increaseValue()">+</button>
+                                                <button class="btn btn-primary text-white" type="button">+</button>
                                             </div>
                                         </div>
 
@@ -196,11 +202,11 @@
                                         <label class="input-group-count-label">Cantidad</label>
                                         <div class="input-group input-group-count  mb-30">
                                             <div class="input-group-prepend">
-                                                <button class="btn btn-primary text-white" type="button" onclick="decreaseValue()">-</button>
+                                                <button class="btn btn-primary text-white" type="button">-</button>
                                             </div>
                                             <input type="number" class="form-control" id="count-input" value="0">
                                             <div class="input-group-append">
-                                                <button class="btn btn-primary text-white" type="button" onclick="increaseValue()">+</button>
+                                                <button class="btn btn-primary text-white" type="button">+</button>
                                             </div>
                                         </div>
 
@@ -232,11 +238,11 @@
                                         <label class="input-group-count-label">Cantidad</label>
                                         <div class="input-group input-group-count  mb-30">
                                             <div class="input-group-prepend">
-                                                <button class="btn btn-primary text-white" type="button" onclick="decreaseValue()">-</button>
+                                                <button class="btn btn-primary text-white" type="button">-</button>
                                             </div>
                                             <input type="number" class="form-control" id="count-input" value="0">
                                             <div class="input-group-append">
-                                                <button class="btn btn-primary text-white" type="button" onclick="increaseValue()">+</button>
+                                                <button class="btn btn-primary text-white" type="button">+</button>
                                             </div>
                                         </div>
 
@@ -255,34 +261,55 @@
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                                     <div class="card-body">
-                                        <ul class="service-detail-list">
-                                            <li>Duración aproximada: 1 hr</li>
-                                            <li>El servicio incluye: Transporte de tu ameizer al lugar que elijas (dentro de la zona de cobertura)</li>
-                                            <li>Preparación de la piel</li>
-                                            <li>Maquillaje con productos de alta calidad</li>
-                                            <li>Todos los implementos necesarios</li>
-                                            <li>Pestañas postizas tienen un costo de $5000 adicional, y debes informarlo previo a la cita</li>
-                                        </ul>
-                                        <h3 class="price-label">Precio: $11.000</h3>
-
-                                        <label class="input-group-count-label">Cantidad</label>
-                                        <div class="input-group input-group-count  mb-30">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-primary text-white" type="button" onclick="decreaseValue()">-</button>
-                                            </div>
-                                            <input type="number" class="form-control" id="count-input" value="0">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-primary text-white" type="button" onclick="increaseValue()">+</button>
+                                        <div class="row">
+                                            <div class="col-sm-7 col-md-7 col-lg-5">
+                                                <div class="form-group mb-35">
+                                                    <label class="select-label">Selecciona tipo de tratamiento:</label>
+                                                    <select class="custom-select custom-select-reset">
+                                                        <option selected>- - Selección - -</option>
+                                                        <option value="1">Nail Art</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <button type="button" class="btn btn-primary btn-rounded text-white btn-add-to-cart mb-4">Agregar al carrito</button>
+                                        <div class="col-md-12">
+                                            <p class="service-subtext">Nail Art</p>
+                                            <ul class="service-detail-list">
+                                                <li>Duración aproximada: 1 hr</li>
+                                                <li>El servicio incluye: Transporte de tu ameizer al lugar que elijas (dentro de la zona de cobertura)</li>
+                                                <li>Preparación de la piel</li>
+                                                <li>Maquillaje con productos de alta calidad</li>
+                                                <li>Todos los implementos necesarios</li>
+                                                <li>Pestañas postizas tienen un costo de $5000 adicional, y debes informarlo previo a la cita</li>
+                                            </ul>
+                                            <h3 class="price-label">Precio: $11.000</h3>
+
+                                            <label class="input-group-count-label">Cantidad</label>
+                                            <div class="input-group input-group-count  mb-30">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-primary text-white" type="button">-</button>
+                                                </div>
+                                                <input type="number" class="form-control" id="count-input" value="0">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary text-white" type="button">+</button>
+                                                </div>
+                                            </div>
+
+                                            <button type="button" class="btn btn-primary btn-rounded text-white btn-add-to-cart mb-4" data-toggle="modal" data-target="#add-to-cart-modal">Agregar al carrito</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--Accordian End-->
 
                     </div>
+                    <!--Tab Item End-->
+
+                    <!--Tab Item Start-->
                     <div class="tab-pane fade" id="pedicure" role="tabpanel" aria-labelledby="pedicure-tab">
                         <img class="img-fluid" src="images/services-default.png">
                         <h4 class="service-title">Maquillaje Novias:</h4>
@@ -300,16 +327,19 @@
                         <label class="input-group-count-label">Cantidad</label>
                         <div class="input-group input-group-count  mb-30">
                             <div class="input-group-prepend">
-                                <button class="btn btn-primary text-white" type="button" onclick="decreaseValue()">-</button>
+                                <button class="btn btn-primary text-white" type="button">-</button>
                             </div>
                             <input type="number" class="form-control" id="count-input" value="0">
                             <div class="input-group-append">
-                                <button class="btn btn-primary text-white" type="button" onclick="increaseValue()">+</button>
+                                <button class="btn btn-primary text-white" type="button">+</button>
                             </div>
                         </div>
 
                         <button type="button" class="btn btn-primary btn-rounded text-white btn-add-to-cart mb-4">Agregar al carrito</button>
                     </div>
+                    <!--Tab Item End-->
+
+                    <!--Tab Item Start-->
                     <div class="tab-pane fade" id="mani-pedi" role="tabpanel" aria-labelledby="mani-pedi-tab">
                         <img class="img-fluid" src="images/services-default.png">
                         <h4 class="service-title">Maquillaje Madrinas:</h4>
@@ -327,16 +357,19 @@
                         <label class="input-group-count-label">Cantidad</label>
                         <div class="input-group input-group-count  mb-30">
                             <div class="input-group-prepend">
-                                <button class="btn btn-primary text-white" type="button" onclick="decreaseValue()">-</button>
+                                <button class="btn btn-primary text-white" type="button">-</button>
                             </div>
                             <input type="number" class="form-control" id="count-input" value="0">
                             <div class="input-group-append">
-                                <button class="btn btn-primary text-white" type="button" onclick="increaseValue()">+</button>
+                                <button class="btn btn-primary text-white" type="button">+</button>
                             </div>
                         </div>
 
                         <button type="button" class="btn btn-primary btn-rounded text-white btn-add-to-cart mb-4">Agregar al carrito</button>
                     </div>
+                    <!--Tab Item End-->
+
+                    <!--Tab Item Start-->
                     <div class="tab-pane fade" id="nail-art" role="tabpanel" aria-labelledby="nail-art-tab">
                         <img class="img-fluid" src="images/services-default.png">
                         <h4 class="service-title">Maquillaje Maquillaje y Peinado:</h4>
@@ -354,18 +387,21 @@
                         <label class="input-group-count-label">Cantidad</label>
                         <div class="input-group input-group-count  mb-30">
                             <div class="input-group-prepend">
-                                <button class="btn btn-primary text-white" type="button" onclick="decreaseValue()">-</button>
+                                <button class="btn btn-primary text-white" type="button">-</button>
                             </div>
                             <input type="number" class="form-control" id="count-input" value="0">
                             <div class="input-group-append">
-                                <button class="btn btn-primary text-white" type="button" onclick="increaseValue()">+</button>
+                                <button class="btn btn-primary text-white" type="button">+</button>
                             </div>
                         </div>
 
                         <button type="button" class="btn btn-primary btn-rounded text-white btn-add-to-cart mb-4">Agregar al carrito</button>
                     </div>
+                    <!--Tab Item End-->
                 </div>
             </div>
+            <!--Right Side Start-->
+
         </div>
     </div>
 </section>
@@ -453,6 +489,40 @@
 </footer>
 <!--Footer End -->
 
+<!--Cart Modal Start-->
+<div class="modal modal-custom fade" tabindex="-1" role="dialog" id="add-to-cart-modal">
+    <div class="modal-dialog container" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="text-center row">
+                    <div class="col-md-8 mx-auto">
+                        <i class="fa fa-check-circle fa-fw check-icon mb-3 mt-4"></i>
+                        <p class="modal-p mb-30">
+                            Has agregado el servicio de <strong>Cejas, ondulado y tinte</strong> a tu carrito de compras.
+                        </p>
+                        <p class="modal-p">¿Qué deseas hacer?</p>
+                    </div>
+                    <div class="col-md-8 mx-auto mb-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="btn btn-reset btn-primary btn-rounded text-white btn-block mb-4" href="#">Seguir comprando</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn btn-reset btn-primary btn-rounded text-white btn-block mb-4" href="#">Ir al carro de compra</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Cart Modal End-->
+
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -460,22 +530,5 @@
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
-<script>
-  //Service Value increase and decrease input
-  function increaseValue() {
-    var value = parseInt(document.getElementById('count-input').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('count-input').value = value;
-  }
-
-  function decreaseValue() {
-    var value = parseInt(document.getElementById('count-input').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value < 1 ? value = 1 : '';
-    value--;
-    document.getElementById('count-input').value = value;
-  }
-</script>
 </body>
 </html>
