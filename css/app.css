@@ -13127,6 +13127,12 @@ footer {
   padding: 60px 0;
 }
 
+@media (min-width: 768px) {
+  .contact-section {
+    padding-bottom: 384px;
+  }
+}
+
 .contact-section a {
   font-family: "Gothic A1", sans-serif;
   font-size: 16px;
