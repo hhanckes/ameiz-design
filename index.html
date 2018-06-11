@@ -114,6 +114,10 @@
             </div>
         </div>
     </div>
+
+    <!--Slider Nav Buttons-->
+    <button type="button" id="prev"><img class="img-fluid" src="images/arrow-left.svg"></button>
+    <button type="button" id="next"><img class="img-fluid" src="images/arrow-right.svg"></button>
 </section>
 <!--Hero Section End-->
 
@@ -482,12 +486,33 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <!--<script src="js/popper.min.js"></script>-->
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
 <script src="js/app.js"></script>
+
 <script>
+
+  // Hero Section Slider
+  var images = [];
+  images.push('images/hero1.jpg');
+  images.push('images/hero2.jpg');
+  images.push('images/hero3.jpg');
+  var index = 0;
+  var backstretchSettings = { fade: 750, duration:3000};
+  $('.hero-section').backstretch(images, backstretchSettings);
+
+  $("#prev").on('click', function(e) {
+    e.preventDefault();
+    $('.hero-section').data('backstretch').prev();
+  });
+  $("#next").on('click', function(e) {
+    e.preventDefault();
+    $('.hero-section').data('backstretch').next();
+  });
+
 
   //Service Slider
   $('.service-slider').slick({

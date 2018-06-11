@@ -1,9 +1,10 @@
 .hero-section{
-  background: url("../images/hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  //background: url("../images/hero.png");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-position: center center;
   height: 100vh;
+  position: relative;
   .container{
     height: 100%;
     &>.row{
@@ -11,6 +12,47 @@
       align-items: center;
       justify-content: center;
     }
+  }
+}
+.backstretch{
+  &:before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+#prev, #next{
+  position: absolute;
+  top: 45%;
+  z-index: 9999;
+  background-color: transparent;
+  border: 0;
+  border: none;
+  width: 45px;
+  padding: 8px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+  &:hover, &:focus, &:active{
+    outline: none;
+  }
+}
+#prev{
+  left: 50px;
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+#next{
+  right: 50px;
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
   }
 }
 .hero-title{
