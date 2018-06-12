@@ -16,11 +16,11 @@ AUTHOR: Rakesh Kumar
 
 @import "variables";//Font and color variable
 @import "../../node_modules/bootstrap/scss/bootstrap";//Bootstrap 4
-@import "../../node_modules/font-awesome/scss/font-awesome";//Font-awesome 4.7
 @import "./partial/header";//Header Css
 @import "./partial/footer";//Footer Css
 @import "home";//Home Css
 @import "services";//Services Css
+@import "ayuda";//Services Css
 @import "./plugin/slick";//Slick Slide Css
 @import "./plugin/slick-theme";//Slick Slider Theme Css
 @import "reset";//General Reset

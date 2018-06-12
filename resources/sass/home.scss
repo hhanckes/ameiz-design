@@ -57,11 +57,13 @@
 }
 .hero-title{
   font-family: $abril;
-  font-size: 54px;
+  font-size: 44px;
   color: #ffffff;
+  font-weight: 700;
   margin-bottom: 4.25rem;
   @include media-breakpoint-up(md){
     margin-bottom: 6.25rem;
+    font-size: 54px;
   }
 }
 .hero-cta{
@@ -97,7 +99,7 @@
   font-weight: bold;
   color: $white;
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 90px;
   &:after{
     position: absolute;
     bottom: -28px;
@@ -126,6 +128,7 @@
     color: #b08767;
     display: block;
     padding-right: 15px;
+    //line-height: .4;
   }
   .step-name{
     font-family: $playfair;
@@ -143,7 +146,6 @@
   padding: 45px 0 90px;
 }
 .service-slider{
-  margin-top: 55px;
   margin-bottom: 55px !important;
   .slick-slide{
     text-align: center;
@@ -162,7 +164,7 @@
         left: 25px;
         right: 25px;
         font-family: $playfair;
-        font-size: 44px;
+        font-size: 40px;
         font-weight: 900;
         color: #ffffff;
         margin: 0;
@@ -171,7 +173,7 @@
           font-size: 35px;
         }
         @include media-breakpoint-up(lg){
-          font-size: 44px;
+          font-size: 40px;
         }
       }
       img{
@@ -216,7 +218,7 @@
       font-size: 33px;
     }
     @include media-breakpoint-up(xl){
-      font-size: 44px;
+      font-size: 40px;
     }
   }
 }

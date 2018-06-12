@@ -1,0 +1,23 @@
+.ayuda-wrapper{
+  padding-top: 70px !important;
+}
+.ayuda-header{
+  background-color: #fff;
+  margin-top: -255px;
+  padding: 70px 50px 30px;
+  margin-bottom: 35px;
+  .page-title {
+    margin-bottom: 25px;
+  }
+}
+.faq-bg-container{
+  height: 425px;
+  background: url("../images/faq-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.ayuda-subtext{
+  font-size: 18px;
+  color: #4a4a4a;
+}

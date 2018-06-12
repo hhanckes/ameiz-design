@@ -130,8 +130,10 @@
 .btn-add-to-cart{
   line-height: 1.9;
   width: 100%;
-  @include media-breakpoint-up(xs){
-    width: 100%;
+  @include media-breakpoint-up(sm){
+    padding-left: 60px;
+    padding-right: 60px;
+    width: auto;
   }
   @include media-breakpoint-up(md){
     padding-left: 100px;

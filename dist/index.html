@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Stylesheet -->
+    <script src="https://use.fontawesome.com/8f376d7a58.js"></script>
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700|Playfair+Display:400,700,900"
           rel="stylesheet">
@@ -36,7 +37,8 @@
                             </button>
                         </form>
                         <a class="d-block form-link" href="#">¿No estás registrado?</a>
-                        <a id="forgot-btn" class="d-block form-link mb-3" href="javascript:;">¿Olvidaste o se bloqueó tu clave?</a>
+                        <a id="forgot-btn" class="d-block form-link mb-3" href="javascript:;">¿Olvidaste o se bloqueó tu
+                            clave?</a>
                     </div>
                     <div class="forgot-form text-center d-none">
                         <h4 class="form-title mb-5">RECUPERA TU CLAVEE</h4>
@@ -126,7 +128,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="section-title text-ask">Experiencia Ameiz</h1>
+                <h1 class="section-title text-ask mb-45">Experiencia Ameiz</h1>
             </div>
         </div>
         <div class="row">
@@ -486,9 +488,8 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<!--<script src="js/popper.min.js"></script>-->
-<script src="js/bootstrap.bundle.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.backstretch.min.js"></script>
 <script src="js/app.js"></script>
@@ -501,14 +502,14 @@
   images.push('images/hero2.jpg');
   images.push('images/hero3.jpg');
   var index = 0;
-  var backstretchSettings = { fade: 750, duration:3000};
+  var backstretchSettings = {fade: 750, duration: 3000};
   $('.hero-section').backstretch(images, backstretchSettings);
 
-  $("#prev").on('click', function(e) {
+  $("#prev").on('click', function (e) {
     e.preventDefault();
     $('.hero-section').data('backstretch').prev();
   });
-  $("#next").on('click', function(e) {
+  $("#next").on('click', function (e) {
     e.preventDefault();
     $('.hero-section').data('backstretch').next();
   });
