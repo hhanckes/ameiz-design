@@ -14,13 +14,20 @@ AUTHOR: Rakesh Kumar
 --*/
 
 
-@import "variables";//Font and color variable
-@import "../../node_modules/bootstrap/scss/bootstrap";//Bootstrap 4
+@import "variables";//Custom Variables
+
+//Bootstrap Functions, Variables and Mixins
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+//@import "../../node_modules/bootstrap/scss/bootstrap";//Bootstrap 4
 @import "./partial/header";//Header Css
 @import "./partial/footer";//Footer Css
 @import "home";//Home Css
 @import "services";//Services Css
-@import "ayuda";//Services Css
+@import "ayuda";//Ayuda Css
+@import "profile";//Profile Css
 @import "./plugin/slick";//Slick Slide Css
 @import "./plugin/slick-theme";//Slick Slider Theme Css
 @import "reset";//General Reset

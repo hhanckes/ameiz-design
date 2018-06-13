@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Stylesheet -->
+
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700|Playfair+Display:400,700,900"
           rel="stylesheet">
     <script src="https://use.fontawesome.com/8f376d7a58.js"></script>
 
-    <title>Ameiz | Ayuda</title>
+    <title>Ameiz | Perfil Ameizer</title>
 </head>
 <body>
 <!-- Desktop Navigation Start -->
@@ -107,56 +108,120 @@
 </nav>
 <!-- Desktop Navigation End -->
 
-<div class="faq-bg-container"></div>
+<div class="profile-bg-container"></div>
 
-<div class="content-wrapper ayuda-wrapper">
+<div class="content-wrapper content-wrapper-profile pt-0">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="ayuda-header">
-                    <h1 class="page-title">¿Tienes alguna duda?</h1>
-                    <p class="ayuda-subtext">En esta sección podrás encontrar la respuesta que estás buscando</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3 left-side">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action active router-link-exact-active">
-                                Categoría 1
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">Categoría 2</a>
-                            <a href="#" class="list-group-item list-group-item-action">Categoría 3</a>
-                            <a href="#" class="list-group-item list-group-item-action">Categoría 4</a>
-                            <a href="#" class="list-group-item list-group-item-action">Categoría 5</a>
-                            <a href="#" class="list-group-item list-group-item-action">Categoría 6</a>
-                            <a href="#" class="list-group-item list-group-item-action">Categoría 7</a>
-                        </div>
-                    </div>
-                    <div class="col-md-9 right-side">
-                        <div class="service-accordion">
-                            <div class="card ">
-                                <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed btn-accordion-toggle" type="button"
-                                                data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
-                                                aria-controls="collapse1">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        </button>
-                                        <button class="btn btn-primary float-right collapsed" type="button"
-                                                data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
-                                                aria-controls="collapse1"></button>
-                                    </h5>
-                                </div>
-
-                                <div id="collapse1" class="collapse">
-                                    <div class="card-body">
-                                        <p>
-                                            Sed sit amet turpis dui. Suspendisse efficitur urna sit amet sem malesuada accumsan. Aenean luctus varius pulvinar. Aliquam laoreet, nisi varius tristique fringilla, magna massa malesuada risus, vitae porta nibh ante in augue. Nullam a nulla rhoncus diam suscipit pellentesque.
-                                        </p>
-                                    </div>
-                                </div>
+        <div class="row mb-35">
+            <div class="col-md-3 profile-left">
+                <img src="images/prfile-avatar.png" class="img-fluid">
+            </div>
+            <div class="col-md-9">
+                <div class="profile-right">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="profile-title">María de los Ángeles Palomero</h2>
+                            <p class="profile-subtitle">Cosmetóloga</p>
+                            <div class="profile-rating">
+                                <i class="fa fa-star fa-fw"></i>
+                                <i class="fa fa-star fa-fw"></i>
+                                <i class="fa fa-star fa-fw"></i>
+                                <i class="fa fa-star fa-fw"></i>
+                                <i class="fa fa-star-o fa-fw"></i>
+                            </div>
+                            <div class="profile-info">
+                                <p>Cel: +56912345678</p>
+                                <p>E-mail: profesional@gmail.com</p>
+                                <p>Av. José Domingo Cañas 1701, Ñuñoa</p>
+                                <p>Rut: 12.345.678-9</p>
+                                <p>33 años</p>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <a href="#" class="btn btn-primary btn-rounded btn-outline-primary btn-block btn-reset">Editar Perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-35">
+            <div class="col-md-12">
+                <div class="card card-profile-page">
+                    <div class="card-header">
+                        <h2 class="service-title mt-15 mb-15 ">Bookings Confirmados</h2>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="table-responsive">
+                            <table class="table table-bookings mb-0">
+                                <thead>
+                                <tr>
+                                    <th>ID Servicio</th>
+                                    <th>Servicio</th>
+                                    <th>Fecha y hora</th>
+                                    <th>Comuna</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-nowrap">ID 123456</td>
+                                    <td class="text-nowrap">Manicure Permanente</td>
+                                    <td class="text-nowrap">26 Mayo 2018 - 17:30 hrs</td>
+                                    <td class="text-nowrap">Colina</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-nowrap">ID 123456</td>
+                                    <td class="text-nowrap">Manicure Permanente</td>
+                                    <td class="text-nowrap">26 Mayo 2018 - 17:30 hrs</td>
+                                    <td class="text-nowrap">Colina</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-nowrap">ID 123456</td>
+                                    <td class="text-nowrap">Manicure Permanente</td>
+                                    <td class="text-nowrap">26 Mayo 2018 - 17:30 hrs</td>
+                                    <td class="text-nowrap">Colina</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-nowrap">ID 123456</td>
+                                    <td class="text-nowrap">Manicure Permanente</td>
+                                    <td class="text-nowrap">26 Mayo 2018 - 17:30 hrs</td>
+                                    <td class="text-nowrap">Colina</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="col-md-4 mx-auto">
+                            <button type="button" class="btn btn-reset btn-primary btn-rounded text-white btn-block">Ver todo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card card-profile-page">
+                    <div class="card-header">
+                        <h2 class="service-title mt-15 mb-15 ">Experiencia</h2>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="experience-content">
+                            <p class="font-weight-bold">Manicurista</p>
+                            <p class="font-weight-bold">Palumbo</p>
+                            <p class="font-weight-bold">2016 - 2018</p>
+                            <p class="mt-15 mb-25">Integer aliquam ipsum vitae enim maximus congue. Nulla non varius massa, ut luctus lectus. Proin pellentesque quam molestie convallis tristique</p>
+                        </div>
+                        <div class="experience-content">
+                            <p class="font-weight-bold">Manicurista</p>
+                            <p class="font-weight-bold">Palumbo</p>
+                            <p class="font-weight-bold">2016 - 2018</p>
+                            <p class="mt-15 mb-25">Integer aliquam ipsum vitae enim maximus congue. Nulla non varius massa, ut luctus lectus. Proin pellentesque quam molestie convallis tristique</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-link btn-block">Ver más <i class="fa fa-chevron-down fa-fw"></i></button>
                     </div>
                 </div>
             </div>
@@ -250,5 +315,6 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

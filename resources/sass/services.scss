@@ -26,14 +26,14 @@
   color: #4a4a4a;
   position: relative;
   margin-top: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   &:before{
     position: absolute;
-    bottom: -7px;
+    bottom: -9px;
     left: 0;
     content: '';
     width: 65px;
-    height: 3px;
+    height: 4px;
     background-color: #b08767;
     border-radius: 5px;
   }
@@ -222,7 +222,7 @@
   color: #4a4a4a;
 }
 .check-icon{
-  font-size: 70px;
+  font-size: 70px !important;
   color: #7ed321;
 }
 .modal-p{

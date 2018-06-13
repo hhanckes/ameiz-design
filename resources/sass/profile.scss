@@ -1,0 +1,123 @@
+.profile-bg-container{
+  height: 357px;
+  background-image: url("../images/detail-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.content-wrapper-profile{
+  margin-top: -130px;
+}
+.profile-left{
+  img{
+    background-color: #edf0f4;
+    border: solid 4px #f7f7f7;
+  }
+}
+.profile-right{
+  background-color: #f7f7f7;
+  padding: 24px 24px 24px 33px;
+  height: 100%;
+}
+.profile-rating{
+  margin-bottom: 15px;
+  .fa{
+    color: $primary;
+    font-size: 28px;
+  }
+}
+.profile-title{
+  font-size: 24px;
+  color: #4a4a4a;
+  margin-bottom: 2px;
+}
+.profile-subtitle{
+  font-size: 16px;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+}
+.profile-info{
+  p{
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.content-container{
+  background-color: #f7f7f7;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+.card-profile-page{
+  border: 0;
+  border-radius: 0;
+  .card-header {
+    background-color: #f7f7f7;
+    border-bottom: 0;
+    &:first-child {
+      border-radius: 0;
+    }
+  }
+  .card-body{
+    background-color: #f7f7f7;
+  }
+  .card-footer {
+    background-color: #f7f7f7;
+    border-top: 2px solid #979797;
+    padding: 20px 1.25rem;
+    &:last-child {
+      border-radius: 0;
+    }
+  }
+}
+.table-bookings{
+  thead th{
+    border-top: 0;
+    font-family: $gothic;
+    font-size: 16px;
+    font-weight: normal;
+    color: #4a4a4a;
+    vertical-align: bottom;
+    border-bottom: 3px dotted rgba(151, 151, 151, 0.65);
+    padding-bottom: 2px;
+    &:first-child{
+      padding-left: 0;
+    }
+  }
+  tbody{
+    tr{
+      td {
+        font-size: 16px;
+        font-weight: bold;
+        color: #4a4a4a;
+        border-top: 0;
+        padding-top: 8px;
+        padding-bottom: 0;
+        &:first-child{
+          padding-left: 0;
+        }
+      }
+      &:first-child{
+        td{
+          padding-top: 24px;
+        }
+      }
+    }
+  }
+}
+.experience-content{
+  border-bottom: 3px dotted rgba(151, 151, 151, 0.65);
+  margin-bottom: 25px;
+  &:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  p{
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+  }
+}
