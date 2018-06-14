@@ -676,6 +676,10 @@ input[type=number]::-webkit-outer-spin-button {
           box-shadow: none;
 }
 
+.form-control-reset {
+  line-height: 1.9;
+}
+
 .btn-reset {
   line-height: 1.9;
 }
@@ -738,6 +742,41 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.border-radius-0 {
+  border-radius: 0;
+}
+
+.input-group.input-group-custom .form-control {
+  border-color: #ed7a82;
+}
+
+.input-group.input-group-custom .fa-calendar {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.input-group.input-group-custom > .form-control:not(:last-child), .input-group.input-group-custom > .custom-select:not(:last-child) {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.input-group.input-group-custom > .input-group-append > .btn, .input-group.input-group-custom > .input-group-append > .input-group-text, .input-group.input-group-custom > .input-group-prepend:not(:first-child) > .btn, .input-group.input-group-custom > .input-group-prepend:not(:first-child) > .input-group-text, .input-group.input-group-custom > .input-group-prepend:first-child > .btn:not(:first-child), .input-group.input-group-custom > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.custom-label {
+  font-size: 18px;
+}
+
+.bootstrap-datetimepicker-widget table th, .bootstrap-datetimepicker-widget table td.day {
+  height: 30px;
+}
+
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: #ed7a82;
 }
 
 /*# sourceMappingURL=common.css.map*/

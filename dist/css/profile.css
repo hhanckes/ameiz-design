@@ -214,4 +214,13 @@
   color: #4a4a4a;
 }
 
+.table-action-btn button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.table-action-btn button:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=profile.css.map*/
