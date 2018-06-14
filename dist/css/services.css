@@ -1,0 +1,76 @@
+.service-content-section {
+  background-color: #fff;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+@media (min-width: 768px) {
+  .service-content-section {
+    padding-top: 170px;
+    padding-bottom: 480px;
+  }
+}
+
+.service-subtext {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+  line-height: 1.33;
+}
+
+.service-detail-list {
+  font-size: 18px;
+  line-height: 1.17;
+  color: #4a4a4a;
+  padding-left: 35px;
+  margin-bottom: 50px;
+}
+
+.service-detail-list li {
+  margin-bottom: 10px;
+}
+
+.price-label {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ed7a82;
+  margin-bottom: 40px;
+  padding-left: 17px;
+}
+
+.nav-tabs-services {
+  margin-bottom: 20px;
+}
+
+.nav-tabs-services li {
+  width: 100%;
+}
+
+.nav-tabs-services li a {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a4a4a;
+  position: relative;
+  padding-left: 36px;
+}
+
+.nav-tabs-services li a:before {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 7px);
+  content: '';
+  height: 14px;
+  width: 14px;
+  border: solid 1px #b08767;
+  border-radius: 20px;
+}
+
+.nav-tabs-services li a.show:before, .nav-tabs-services li a.active:before {
+  content: '';
+  background-color: #b08767;
+}
+
+/*# sourceMappingURL=services.css.map*/

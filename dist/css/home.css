@@ -1,0 +1,357 @@
+.hero-section {
+  height: calc(100vh + 11vh + 1px);
+  position: relative;
+}
+
+.hero-section .container {
+  height: 100%;
+}
+
+.hero-section .container > .row {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.backstretch:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 45%;
+  z-index: 9999;
+  background-color: transparent;
+  border: 0;
+  border: none;
+  width: 45px;
+  padding: 8px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#prev:hover, #prev:focus, #prev:active, #next:hover, #next:focus, #next:active {
+  outline: none;
+}
+
+#prev {
+  left: 50px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #prev {
+    display: block;
+  }
+}
+
+#next {
+  right: 50px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #next {
+    display: block;
+  }
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 4.25rem;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    margin-bottom: 6.25rem;
+    font-size: 54px;
+  }
+}
+
+.hero-cta {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  padding: 18px 60px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #ed7a82;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .hero-cta {
+    padding: 18px 90px;
+  }
+}
+
+.hero-cta:hover, .hero-cta:focus, .hero-cta:active {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f6838b;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.ask-section {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.ask-p-text {
+  font-size: 18px;
+  line-height: 1.28;
+  color: #686868;
+}
+
+.ask-step-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.ask-step-title .step-no {
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  color: #b08767;
+  display: block;
+  padding-right: 15px;
+}
+
+.ask-step-title .step-name {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.23;
+  color: #4a4a4a;
+  position: relative;
+  top: 14px;
+}
+
+.service-section {
+  background-color: #ed7a82;
+  padding: 45px 0 90px;
+}
+
+.service-slider {
+  margin-bottom: 55px !important;
+}
+
+.service-slider .slick-slide {
+  text-align: center;
+  overflow: hidden;
+}
+
+.service-slider .slick-slide a {
+  position: relative;
+  display: inline-block;
+  border: 0;
+}
+
+.service-slider .slick-slide a:hover, .service-slider .slick-slide a:focus, .service-slider .slick-slide a:active {
+  border: 0;
+  outline: none;
+}
+
+.service-slider .slick-slide a h2 {
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  right: 25px;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .service-slider .slick-slide a h2 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-slider .slick-slide a h2 {
+    font-size: 40px;
+  }
+}
+
+.service-slider .slick-slide a img {
+  margin: 0 auto;
+}
+
+.why-section {
+  background-color: #fff;
+  padding: 45px 0 90px;
+}
+
+.section-title-why {
+  color: #3a3a3a !important;
+  margin-bottom: 90px !important;
+}
+
+.why-box {
+  position: relative;
+  background-color: #ffd0cc;
+  border: solid 21px #ffd0cc;
+  height: 100%;
+}
+
+.why-box p {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 18px;
+  color: #363636;
+  margin-top: 28px;
+}
+
+.why-box h2 {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  right: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .why-box h2 {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .why-box h2 {
+    font-size: 40px;
+  }
+}
+
+.testimonial-section {
+  background-color: #f7f7f7;
+  padding: 45px 0 60px;
+}
+
+.testimonial-rating {
+  margin-bottom: 25px;
+}
+
+.testimonial-rating i {
+  color: #ed7a82;
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .testimonial-rating i {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial-rating i {
+    font-size: 32px;
+  }
+}
+
+.customer-name {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+}
+
+.customer-message {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #686868;
+}
+
+.testimonial-slider .slick-dots li button:before {
+  background-color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+}
+
+.testimonial-slider .slick-dots li.slick-active button:before {
+  background-color: transparent;
+}
+
+.testimonial-slider .slick-dots {
+  bottom: -55px;
+}
+
+.contact-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    padding-bottom: 384px;
+  }
+}
+
+.contact-section a {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.contact-section a:hover, .contact-section a:hover, .contact-section a:hover {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.contact-text {
+  font-size: 14px;
+  line-height: 1.64;
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+}
+
+.contact-icon {
+  width: 62px;
+  height: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+
+.contact-page {
+  padding: 175px 0;
+}
+
+@media (min-width: 768px) {
+  .contact-page {
+    padding-bottom: 460px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map*/
