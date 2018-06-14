@@ -1,0 +1,59 @@
+.ayuda-wrapper {
+  padding-top: 70px !important;
+}
+
+.ayuda-header {
+  background-color: #fff;
+  margin-top: -255px;
+  padding: 30px 30px 20px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .ayuda-header {
+    padding: 70px 50px 30px;
+    margin-bottom: 35px;
+  }
+}
+
+.ayuda-header .page-title {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+@media (min-width: 576px) {
+  .ayuda-header .page-title {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ayuda-header .page-title {
+    font-size: 54px;
+  }
+}
+
+.faq-bg-container {
+  height: 425px;
+  background: url("../images/faq-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.ayuda-subtext {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+@media (min-width: 768px) {
+  .ayuda-subtext {
+    font-size: 18px;
+  }
+}
+
+.left-side {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=ayuda.css.map*/
