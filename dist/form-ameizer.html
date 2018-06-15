@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker-standalone.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <link rel="stylesheet" href="css/scheduler.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700|Playfair+Display:400,700,900"
+          rel="stylesheet">
+    <script src="https://use.fontawesome.com/8f376d7a58.js"></script>
+
+    <title>Ameiz | Formulario Ameizer</title>
+</head>
+<body>
+<!-- Desktop Navigation Start -->
+<nav class="navbar fixed-top navbar-light bg-transparent navbar-reset">
+    <div class="action-nav">
+        <ul class="nav justify-content-end">
+            <li class="nav-item dropdown dropdown-login-form">
+                <a href="javascript:;" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    Mi cuenta
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-login-form">
+                    <div class="login-form text-center">
+                        <h4 class="form-title">HOLA,<br>INGRESA TU E-MAIL Y TU CLAVE</h4>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Clave">
+                            </div>
+                            <button type="submit"
+                                    class="btn btn-primary btn-block btn-rounded text-white btn-reset mb-4">Ingresar
+                            </button>
+                        </form>
+                        <a class="d-block form-link" href="#">¿No estás registrado?</a>
+                        <a id="forgot-btn" class="d-block form-link mb-3" href="javascript:;">¿Olvidaste o se bloqueó tu
+                            clave?</a>
+                    </div>
+                    <div class="forgot-form text-center d-none">
+                        <h4 class="form-title mb-5">RECUPERA TU CLAVEE</h4>
+                        <form>
+                            <div class="form-group mb-35">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                            <button type="submit"
+                                    class="btn btn-primary btn-block btn-rounded text-white btn-reset mb-4">Recuperar
+                                clave
+                            </button>
+                            <button id="back-btn" type="button"
+                                    class="btn btn-primary btn-block btn-rounded btn-outline-primary btn-reset mb-4">
+                                Volver
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Quiero ser Ameizer</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-menu">
+        <ul class="nav justify-content-center">
+            <li class="nav-item mobile-hide">
+                <a class="nav-link" href="#">CÓMO FUNCIONA</a>
+            </li>
+            <li class="nav-item mobile-hide">
+                <a class="nav-link" href="#">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link-logo" href="#"><img src="images/logo-header.svg"></a>
+            </li>
+            <li class="nav-item mobile-hide">
+                <a class="nav-link" href="#">CONTACTO</a>
+            </li>
+            <li class="nav-item mobile-hide">
+                <a class="nav-link" href="#">AYUDA</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse" id="navbarToggle">
+            <div class="mobile-nav-list">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CÓMO FUNCIONA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AYUDA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Desktop Navigation End -->
+
+<div class="profile-bg-container"></div>
+
+<div class="content-wrapper content-wrapper-profile pt-0">
+    <div class="container">
+        <div class="row mb-35">
+            <div class="col-md-12">
+                <div class="form-profile-avatar mx-auto text-center">
+                    <!--<img src="images/prfile-avatar.png" class="img-fluid">-->
+                    <i class="fa fa-camera"></i>
+                    <button type="button" class="btn btn-reset btn-primary btn-rounded text-white">Agregar foto de perfil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="service-title mt-15 mb-35 ">Datos personales</h2>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="nombre">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="apellidos">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="celular">Teléfono Celular</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="celular">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="email">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="calle">Calle</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="calle">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="numero">Número</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="numero">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="depto-casa">Depto / Casa</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="depto-casa">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label>Comuna</label>
+                    <select class="custom-select custom-select-reset">
+                        <option selected>- - Select - -</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label>Fecha de nacimiento</label>
+                    <div class="input-group input-group-custom date" id='datetimepicker6'>
+                        <input type="text" class="form-control form-control-reset">
+                        <div class="input-group-append input-group-addon">
+                            <button class="btn btn-primary text-white" type="button"><i class="fa fa-calendar"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="rut">Rut (sin puntos ni guión)</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="rut">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="rut">Rut (sin puntos ni guión)</label>
+                    <div class="custom-file custom-file-reset">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="hr-form">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <h2 class="service-title mt-20 mb-35 ">Experiencia profesional</h2>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="titulo">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="form-group">
+                    <label for="empresa">Empresa (o independiente)</label>
+                    <input type="text" class="form-control form-control-reset form-control-primary" id="empresa">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="form-group">
+                    <label>Desde</label>
+                    <select class="custom-select custom-select-reset">
+                        <option selected>Selecciona año</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="form-group">
+                    <label>Hasta</label>
+                    <select class="custom-select custom-select-reset">
+                        <option selected>Selecciona año</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea type="text" class="form-control form-control-reset form-control-primary" id="description" rows="3"></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-md-end mb-35">
+            <div class="col-md-4 col-lg-3">
+                <button type="button" class="btn btn-primary btn-reset btn-rounded text-white btn-block mt-2">Agregar más</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <hr class="hr-form">
+            </div>
+        </div>
+
+        <div class="row mb-15">
+            <div class="col-md-12 col-lg-12">
+                <h2 class="service-title mt-15 mb-35 ">Servicios que puede realizar</h2>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Manicure</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="permanente">
+                            <label class="custom-control-label" for="permanente">Permanente</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="semi-permanente">
+                            <label class="custom-control-label" for="semi-permanente">Semi-Permanente</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="normal">
+                            <label class="custom-control-label" for="normal">Normal</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Brushing</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="opcion">
+                            <label class="custom-control-label" for="opcion">Opción Única</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Social</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="sopcion">
+                            <label class="custom-control-label" for="sopcion">Opción Única</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Cejas</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="perfilado">
+                            <label class="custom-control-label" for="perfilado">Perfilado de Cejas</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Pedicure</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="permanente2">
+                            <label class="custom-control-label" for="permanente2">Permanente</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="semi-permanente2">
+                            <label class="custom-control-label" for="semi-permanente2">Semi-Permanente</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="normal2">
+                            <label class="custom-control-label" for="normal2">Normal</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Pestañas</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="lifting">
+                            <label class="custom-control-label" for="lifting">Lifting y Tinte</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="extension">
+                            <label class="custom-control-label" for="extension">Extensión de Pestañas</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="ondulado">
+                            <label class="custom-control-label" for="ondulado">Ondulado y Tinte</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Ondas</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="opcion3">
+                            <label class="custom-control-label" for="opcion3">Opción Única</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Mani - Pedi</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="permanente3">
+                            <label class="custom-control-label" for="permanente3">Permanente</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="semi-permanente3">
+                            <label class="custom-control-label" for="semi-permanente3">Semi-Permanente</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="normal3">
+                            <label class="custom-control-label" for="normal3">Normal</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Madrinas</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="opcion4">
+                            <label class="custom-control-label" for="opcion4">Opción Única</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Maquillaje y peinado</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="opcion5">
+                            <label class="custom-control-label" for="opcion5">Opción Única</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>De fiesta</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="opcion6">
+                            <label class="custom-control-label" for="opcion6">Opción Única</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-25">
+                <div class="card card-form-page">
+                    <div class="card-body">
+                        <p>Nail Art</p>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset">
+                            <input type="checkbox" class="custom-control-input" id="opcion7">
+                            <label class="custom-control-label" for="opcion7">Nail Art</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <hr class="hr-form">
+            </div>
+        </div>
+
+        <div class="row mb-15">
+            <div class="col-md-12 col-lg-12">
+                <h2 class="service-title mt-15 mb-35 ">Fotos de servicios realizados</h2>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                    <label for="rut">Adjunta una foto</label>
+                    <div class="custom-file custom-file-reset">
+                        <input type="file" class="custom-file-input" id="foto">
+                        <label class="custom-file-label" for="foto"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <hr class="hr-form">
+            </div>
+        </div>
+
+        <div class="row mb-15">
+            <div class="col-md-12 col-lg-12">
+                <h2 class="service-title mt-15 mb-35 ">Ubicación donde prefiere trabajar</h2>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="custom-control custom-checkbox custom-checkbox-reset mb-20">
+                            <input type="checkbox" class="custom-control-input" id="tengo">
+                            <label class="custom-control-label" for="tengo">Tengo transporte propio</label>
+                        </div>
+                        <hr class="hr-dotted mb-20">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="custom-control custom-checkbox custom-checkbox-reset mb-20">
+                    <input type="checkbox" class="custom-control-input" id="santiago">
+                    <label class="custom-control-label" for="santiago">Santiago</label>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="custom-control custom-checkbox custom-checkbox-reset mb-20">
+                    <input type="checkbox" class="custom-control-input" id="la-reina">
+                    <label class="custom-control-label" for="la-reina">La Reina</label>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="custom-control custom-checkbox custom-checkbox-reset mb-20">
+                    <input type="checkbox" class="custom-control-input" id="la-condes">
+                    <label class="custom-control-label" for="la-condes">Las Condes</label>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="custom-control custom-checkbox custom-checkbox-reset mb-20">
+                    <input type="checkbox" class="custom-control-input" id="lo-barnechea">
+                    <label class="custom-control-label" for="lo-barnechea">Lo Barnechea</label>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="custom-control custom-checkbox custom-checkbox-reset mb-20">
+                    <input type="checkbox" class="custom-control-input" id="providencia">
+                    <label class="custom-control-label" for="providencia">providencia</label>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="custom-control custom-checkbox custom-checkbox-reset mb-20">
+                    <input type="checkbox" class="custom-control-input" id="vitacura">
+                    <label class="custom-control-label" for="vitacura">Vitacura</label>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="custom-control custom-checkbox custom-checkbox-reset mb-20">
+                    <input type="checkbox" class="custom-control-input" id="colina">
+                    <label class="custom-control-label" for="colina">Colina</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="hr-form">
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <h2 class="service-title mt-15 mb-35 ">Selecciona tu disponibilidad</h2>
+            </div>
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <div id='calendar'></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-35">
+            <div class="col-md-12 col-lg-12 mb-20">
+                <div class="custom-control custom-checkbox custom-checkbox-reset">
+                    <input type="checkbox" class="custom-control-input" id="accept">
+                    <label class="custom-control-label" for="accept"><a href="#" class="link-blue">Acepto los términos y condiciones</a></label>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <button type="button" class="btn btn-reset btn-primary btn-rounded btn-block text-white">Guardar</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!--Footer Start-->
+<footer>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-sm-6 col-md-3">
+                <h4 class="footer-title text-uppercase">SERVICIOS</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">Maquillaje</a>
+                    </li>
+                    <li>
+                        <a href="#">Peinado</a>
+                    </li>
+                    <li>
+                        <a href="#">Manicure</a>
+                    </li>
+                    <li>
+                        <a href="#">Cejas y Pestañas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h4 class="footer-title text-uppercase">SOBRE AMEIZ</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">¿Qué es Ameiz?</a>
+                    </li>
+                    <li>
+                        <a href="#">¿Cómo funciona?</a>
+                    </li>
+                    <li>
+                        <a href="#">Conviértete en Ameizer</a>
+                    </li>
+                    <li>
+                        <a href="#">Trabaja con nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h4 class="footer-title text-uppercase">AYUDA A</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="#">Políticas de Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos y condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h4 class="footer-title text-uppercase">SUSCRÍBETE</h4>
+                <div class="input-group mb-3 subscribe-form">
+                    <input type="text" class="form-control" placeholder="ejemplo@mail.com">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary text-uppercase" type="button">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/logo-footer.svg" class="logo-footer"> Creado con mucho ♥︎ | Copyright © Ameiz Inc.
+                    2018
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script src="js/scheduler.min.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    $('#datetimepicker6').datetimepicker({
+      format: 'MM/DD/YYYY',
+      icons: {
+        time: 'fa fa-clock-o',
+        date: 'fa fa-calendar',
+        up: 'fa fa-chevron-up',
+        down: 'fa fa-chevron-down',
+        previous: 'fa fa-chevron-left',
+        next: 'fa fa-chevron-right',
+        today: 'fa fa-calendar-check-o',
+        clear: 'fa fa-trash',
+        close: 'fa fa-close'
+      }
+    });
+
+    //Availability Calendar
+    $('#calendar').fullCalendar({
+      defaultView: 'agendaWeek',
+      firstDay: 1,
+      allDaySlot: false,
+      defaultDate: '2018-06-14',
+      editable: false,
+      selectable: false,
+      eventLimit: true, // allow "more" link when too many events
+      header: {
+        left: '',
+        center: '',
+        right: '',
+      },
+      resources: [
+        { id: 'a', title: 'Disponibilidad', color: '#ed7a82', textColor: '#000' }
+      ],
+      events: [
+        { id: '1', resourceId: 'a', start: '2018-06-10T12:00:00', end: '2018-06-10T17:30:00', title: '' },
+        { id: '2', resourceId: 'a', start: '2018-06-11T09:00:00', end: '2018-06-11T10:30:00', title: '' },
+        { id: '3', resourceId: 'a', start: '2018-06-12T21:00:00', end: '2018-06-12T23:30:00', title: '' },
+        { id: '4', resourceId: 'a', start: '2018-06-13T11:00:00', end: '2018-06-13T14:30:00', title: '' },
+        { id: '5', resourceId: 'a', start: '2018-06-14T09:00:00', end: '2018-06-14T17:30:00', title: '' }
+      ],
+    });
+  });
+
+</script>
+</body>
+</html>

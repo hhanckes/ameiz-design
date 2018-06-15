@@ -1,15 +1,3 @@
-.profile-bg-container {
-  height: 357px;
-  background-image: url("../images/detail-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.content-wrapper-profile {
-  margin-top: -130px;
-}
-
 .profile-left img {
   background-color: #edf0f4;
   border: solid 4px #f7f7f7;
@@ -150,31 +138,6 @@
 
 .profile-service-list li {
   list-style: none;
-}
-
-.fc {
-  min-width: 450px;
-}
-
-.fc-license-message {
-  display: none;
-}
-
-.fc-scroller {
-  height: auto !important;
-}
-
-.fc-view-container {
-  background-color: #ffffff;
-}
-
-.fc-event {
-  border-radius: 0 !important;
-  border: 0 !important;
-}
-
-.fc-header-toolbar {
-  display: none;
 }
 
 @media (min-width: 992px) {
