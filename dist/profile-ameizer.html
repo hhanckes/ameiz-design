@@ -448,7 +448,6 @@
 
 <script>
   $(function() { // document ready
-
     //Availability Calendar
     $('#calendar').fullCalendar({
       defaultView: 'agendaWeek',
@@ -474,33 +473,29 @@
         { id: '5', resourceId: 'a', start: '2018-06-14T09:00:00', end: '2018-06-14T17:30:00', title: '' }
       ],
     });
-
   });
   $(function(){
-
 // Load More Experience
-    $("#load-experience").click(function(e){ 
-       $('.experience').append(`<div class="experience-content"> 
+    $("#load-experience").click(function(e){
+      $('.experience').append(`<div class="experience-content">
                             <p class="font-weight-bold">Manicurista</p>
                             <p class="font-weight-bold">Palumbo</p>
                             <p class="font-weight-bold">2016 - 2018</p>
-                            <p class="mt-15 mb-25">Integer aliquam ipsum vitae enim maximus congue. Nulla non varius massa, ut luctus lectus. Proin pellentesque quam molestie convallis tristique</p> 
+                            <p class="mt-15 mb-25">Integer aliquam ipsum vitae enim maximus congue. Nulla non varius massa, ut luctus lectus. Proin pellentesque quam molestie convallis tristique</p>
                         </div>`);
     });
-
 // Load more Services
-    $("#load-services").click(function(e){ 
-       $('.services').append(`<div class="experience-content">
+    $("#load-services").click(function(e){
+      $('.services').append(`<div class="experience-content">
                             <p class="font-weight-bold">Cejas</p>
                             <ul class="profile-service-list">
                                 <li>Perfilado de Cejas</li>
                             </ul>
                         </div>`);
     });
-
 // Load more portfolio
-    $("#load-portfolio").click(function(e){ 
-       $('.portfolio').append(`<div class="row">
+    $("#load-portfolio").click(function(e){
+      $('.portfolio').append(`<div class="row">
                             <div class="col-md-4 text-center">
                                 <img src="images/profile-portfolio1.png" class="img-fluid mb-15">
                             </div>
@@ -512,7 +507,7 @@
                             </div>
                         </div>`);
     });
-});
+  });
 </script>
 </body>
 </html>
