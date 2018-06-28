@@ -170,7 +170,7 @@
                             </div>
                         </div>
 
-                        <button type="button" class="btn btn-primary btn-rounded text-white btn-add-to-cart mb-4">
+                        <button data-toggle="modal" data-target="#add-to-cart-modal" type="button" class="btn btn-primary btn-rounded text-white btn-add-to-cart mb-4">
                             Agregar al carrito
                         </button>
                     </div>
@@ -375,7 +375,41 @@
     </div>
 </footer>
 <!--Footer End -->
-
+<!--Cart Modal Start-->
+<div class="modal modal-custom fade" tabindex="-1" role="dialog" id="add-to-cart-modal">
+    <div class="modal-dialog container" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="text-center row">
+                    <div class="col-md-8 mx-auto">
+                        <i class="fa fa-check-circle fa-fw check-icon mb-3 mt-4"></i>
+                        <p class="modal-p mb-30">
+                            Has agregado el servicio de <strong>Cejas, ondulado y tinte</strong> a tu carrito de
+                            compras.
+                        </p>
+                        <p class="modal-p">¿Qué deseas hacer?</p>
+                    </div>
+                    <div class="col-md-8 mx-auto mb-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="btn btn-reset btn-primary btn-rounded text-white btn-block mb-4" href="#">Seguir
+                                    comprando</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn btn-reset btn-primary btn-rounded text-white btn-block mb-4" href="#">Ir
+                                    al carro de compra</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Cart Modal End-->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
