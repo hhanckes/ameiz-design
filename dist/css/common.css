@@ -311,6 +311,10 @@ body {
   }
 }
 
+:focus {
+  outline: none;
+}
+
 /* For Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
@@ -628,6 +632,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
   color: #fff;
+  background-color: #ed7a82;
 }
 
 .custom-select-reset {
@@ -868,6 +873,48 @@ textarea.form-control-primary {
   height: 20px;
 }
 
+.custom-radio-reset {
+  min-height: 2rem;
+  padding-left: 2rem;
+}
+
+.custom-radio-reset .custom-control-label {
+  line-height: 32px;
+  color: #4a4a4a;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.custom-radio-reset .custom-control-label::before {
+  width: 25px;
+  height: 25px;
+  border: solid 2px #ed7a82;
+  background-color: #fff;
+  left: -2rem;
+}
+
+.custom-radio-reset .custom-control-label::after {
+  width: 25px;
+  height: 25px;
+  left: -2rem;
+}
+
+.custom-radio-reset .extra-info {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+.custom-radio-reset .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #fff;
+}
+
+.custom-radio-reset .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNyAxNyI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNlZDdhODI7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5hPC90aXRsZT48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjguNSIgY3k9IjguNSIgcj0iOC41Ii8+PC9zdmc+");
+}
+
 .link-blue {
   color: #4a90e2 !important;
 }
@@ -946,7 +993,7 @@ textarea.form-control-primary {
 }
 
 .form-client-bg-container {
-  height: 200px;
+  height: 270px;
   background-image: url("../images/client-form-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -967,6 +1014,15 @@ textarea.form-control-primary {
   .content-wrapper-client-form {
     padding-bottom: 550px;
   }
+}
+
+.profile-client-action-btn a {
+  font-size: 23px;
+  padding: 12px;
+}
+
+.profile-client-action-btn a:hover, .profile-client-action-btn a:focus, .profile-client-action-btn a:active {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=common.css.map*/

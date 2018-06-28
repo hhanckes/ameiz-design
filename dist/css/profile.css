@@ -74,6 +74,18 @@
   border-radius: 0;
 }
 
+.card-session-page .card-header {
+  background-color: #fff;
+}
+
+.card-session-page .card-body {
+  background-color: #fff;
+}
+
+.card-session-page .card-footer {
+  background-color: #fff;
+}
+
 .table-bookings thead th {
   border-top: 0;
   font-family: "Gothic A1", sans-serif;
@@ -184,6 +196,159 @@
 
 .table-action-btn button:hover {
   cursor: pointer;
+}
+
+.time-picker .head {
+  padding: 25px;
+  background-color: #ed7a82;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.time-picker .btn {
+  display: block;
+  text-align: left;
+  padding: 15px 25px;
+  line-height: 1;
+  position: relative;
+  margin-left: 0 !important;
+  margin-top: 6px;
+}
+
+.time-picker .btn:first-child:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  right: 5px;
+  height: 1px;
+  background-color: #efefef;
+}
+
+.time-picker .btn.focus, .time-picker .btn.active {
+  background-color: #ed7a82;
+  color: #fff;
+  font-weight: bold;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.time-picker .btn:after {
+  position: absolute;
+  bottom: -5px;
+  left: 5px;
+  right: 5px;
+  content: '';
+  height: 1px;
+  background-color: #efefef;
+}
+
+.time-picker .btn-group {
+  width: 100%;
+  display: block;
+  height: 530px;
+  overflow-y: scroll;
+}
+
+.time-picker .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .time-picker .btn-group > .btn-group:not(:last-child) > .btn {
+  border-radius: 0;
+}
+
+.time-picker .btn-group > .btn:not(:first-child), .time-picker .btn-group > .btn-group:not(:first-child) > .btn {
+  border-radius: 0;
+}
+
+.datepicker-full .picker-switch {
+  text-transform: capitalize;
+}
+
+.datepicker-full .bootstrap-datetimepicker-widget table td.old, .datepicker-full .bootstrap-datetimepicker-widget table td.new {
+  background-color: #e8e8e8;
+  color: #c2c2c2;
+}
+
+.datepicker-full .bootstrap-datetimepicker-widget table td.today {
+  position: relative;
+  background-color: rgba(237, 121, 130, 0.17);
+}
+
+.datepicker-full .bootstrap-datetimepicker-widget table td.today.active {
+  background-color: #ed7a82;
+}
+
+.datepicker-full .bootstrap-datetimepicker-widget table td.today:before {
+  content: '';
+  display: inline-block;
+  border: solid transparent;
+  border-width: 0 0 7px 7px;
+  border-bottom-color: #ed7a82;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+.datepicker-full .bootstrap-datetimepicker-widget table td.day {
+  vertical-align: top;
+  border: 1px solid #eceff1;
+  padding: 3px;
+}
+
+@media (min-width: 768px) {
+  .datepicker-full .bootstrap-datetimepicker-widget table td.day {
+    font-size: 18px;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.7rem 0.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .datepicker-full .bootstrap-datetimepicker-widget table td.day {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.datepicker-full .bootstrap-datetimepicker-widget table td.day.active {
+  color: #fff;
+}
+
+.datepicker-full .table-condensed {
+  width: 100%;
+}
+
+.datepicker-full .table-condensed thead tr th {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ed7a82;
+  padding: 3px;
+}
+
+@media (min-width: 768px) {
+  .datepicker-full .table-condensed thead tr th {
+    padding: 0 1rem;
+    height: 52px;
+  }
+}
+
+.datepicker-full .table-condensed thead tr:first-child th {
+  border-bottom: 1px solid #fff;
+}
+
+.datepicker-full .table-condensed thead tr:first-child th .fa-caret-down {
+  font-size: 35px;
+}
+
+.datepicker-full .table-condensed thead tr:first-child th:nth-child(2) {
+  text-align: center;
+}
+
+.datepicker-full .table-condensed thead tr:first-child th:last-child {
+  text-align: right;
 }
 
 /*# sourceMappingURL=profile.css.map*/

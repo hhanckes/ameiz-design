@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700|Playfair+Display:400,700,900"
+          rel="stylesheet">
+    <script src="https://use.fontawesome.com/8f376d7a58.js"></script>
+
+    <title>Ameiz | Editar Sesion</title>
+</head>
+<body>
+<!-- Desktop Navigation Start -->
+<nav class="navbar fixed-top navbar-light bg-transparent navbar-reset">
+    <div class="action-nav">
+        <ul class="nav justify-content-end">
+            <li class="nav-item dropdown dropdown-login-form">
+                <a href="javascript:;" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    Mi cuenta
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-login-form">
+                    <div class="login-form text-center">
+                        <h4 class="form-title">HOLA,<br>INGRESA TU E-MAIL Y TU CLAVE</h4>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Clave">
+                            </div>
+                            <button type="submit"
+                                    class="btn btn-primary btn-block btn-rounded text-white btn-reset mb-4">Ingresar
+                            </button>
+                        </form>
+                        <a class="d-block form-link" href="#">¿No estás registrado?</a>
+                        <a id="forgot-btn" class="d-block form-link mb-3" href="javascript:;">¿Olvidaste o se bloqueó tu
+                            clave?</a>
+                    </div>
+                    <div class="forgot-form text-center d-none">
+                        <h4 class="form-title mb-5">RECUPERA TU CLAVEE</h4>
+                        <form>
+                            <div class="form-group mb-35">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                            <button type="submit"
+                                    class="btn btn-primary btn-block btn-rounded text-white btn-reset mb-4">Recuperar
+                                clave
+                            </button>
+                            <button id="back-btn" type="button"
+                                    class="btn btn-primary btn-block btn-rounded btn-outline-primary btn-reset mb-4">
+                                Volver
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Quiero ser Ameizer</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-menu">
+        <ul class="nav justify-content-center">
+            <li class="nav-item mobile-hide">
+                <a class="nav-link" href="#">CÓMO FUNCIONA</a>
+            </li>
+            <li class="nav-item mobile-hide">
+                <a class="nav-link" href="#">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link-logo" href="#"><img src="images/logo-header.svg"></a>
+            </li>
+            <li class="nav-item mobile-hide">
+                <a class="nav-link" href="#">CONTACTO</a>
+            </li>
+            <li class="nav-item mobile-hide">
+                <a class="nav-link" href="#">AYUDA</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse" id="navbarToggle">
+            <div class="mobile-nav-list">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CÓMO FUNCIONA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AYUDA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Desktop Navigation End -->
+
+<div class="form-client-bg-container"></div>
+
+<div class="content-wrapper content-wrapper-profile pt-0">
+    <div class="container">
+        <div class="row mb-35">
+            <div class="col-md-12 col-lg-12">
+                <div class="profile-right">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h2 class="profile-title mb-25">Verónica Astudillo Cárdenas</h2>
+                            <div class="profile-info">
+                                <p class="mb-20">Cel: +56912345678</p>
+                                <p class="mb-20">v.astudillo@gmail.com</p>
+                                <p class="mb-20"><a href="#">Cambiar contraseña</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="btn btn-primary btn-rounded btn-outline-primary btn-block btn-reset">Editar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="card card-profile-page card-session-page mb-0">
+                    <div class="card-header">
+                        <h2 class="service-title mt-15 mb-15 ">Modificando tu reserva </h2>
+                    </div>
+                    <div class="card-body pt-0 pb-0">
+                        <div class="experience-content pb-3">
+                            <p>Manicure Permanente</p>
+                            <p>Confirmado para 26 Mayo 2018 - 17:30 hrs</p>
+                            <p>Av. Nueva Providencia 2070, Providencia, Santiago, Región Metropolitana</p>
+                            <p>Ameizer asignada: María de los Ángeles Palomero <a href="#" class="font-weight-bold">Ver perfil</a></p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+
+
+                <div class="card card-profile-page card-session-page mb-35">
+                    <div class="card-header">
+                        <h2 class="service-title mt-0 mb-30 ">Cambio de día y hora </h2>
+                    </div>
+                    <div class="card-body pt-0 pb-0">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div id="datetimepicker6" class="datepicker-full"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="time-picker">
+                                    <div class="head">
+                                        Selecciona horario para
+                                        <br>1 Junio 2018
+                                    </div>
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option1" autocomplete="off"> 00:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> 00:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option3" autocomplete="off"> 01:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option4" autocomplete="off"> 01:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option5" autocomplete="off"> 02:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option6" autocomplete="off"> 02:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option7" autocomplete="off"> 03:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option8" autocomplete="off"> 03:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option9" autocomplete="off"> 04:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option10" autocomplete="off"> 04:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option11" autocomplete="off"> 05:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option12" autocomplete="off"> 05:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option13" autocomplete="off"> 06:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option14" autocomplete="off"> 06:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option15" autocomplete="off"> 07:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option16" autocomplete="off"> 07:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option17" autocomplete="off"> 08:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option18" autocomplete="off"> 08:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option19" autocomplete="off"> 09:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option20" autocomplete="off"> 09:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option21" autocomplete="off"> 10:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option22" autocomplete="off"> 10:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option23" autocomplete="off"> 11:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option24" autocomplete="off"> 11:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option25" autocomplete="off"> 12:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option26" autocomplete="off"> 12:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option27" autocomplete="off"> 13:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option28" autocomplete="off"> 13:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option29" autocomplete="off"> 14:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option30" autocomplete="off"> 14:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option31" autocomplete="off"> 15:0:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option32" autocomplete="off"> 15:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option33" autocomplete="off"> 16:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option34" autocomplete="off"> 16:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option35" autocomplete="off"> 17:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option36" autocomplete="off"> 17:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option37" autocomplete="off"> 18:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option38" autocomplete="off"> 18:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option39" autocomplete="off"> 19:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option40" autocomplete="off"> 19:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option41" autocomplete="off"> 20:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option42" autocomplete="off"> 20:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option43" autocomplete="off"> 21:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option44" autocomplete="off"> 21:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option45" autocomplete="off"> 22:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option46" autocomplete="off"> 22:30:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option47" autocomplete="off"> 23:00:00
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="option48" autocomplete="off"> 23:30:00
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+
+                <div class="card card-profile-page card-session-page mb-35">
+                    <div class="card-header">
+                        <h2 class="service-title mt-15 mb-15 ">Selecciona la dirección donde iremos </h2>
+                    </div>
+                    <div class="card-body pt-0 pb-0">
+                        <div class="custom-control custom-radio custom-radio-reset mb-5 mt-3">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Av. Pdte. Riesco 5296, Las Condes, Región Metropolitana</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-radio-reset mb-5">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Av. Nueva Providencia 2070, Providencia, Santiago, Región Metropolitana</label>
+                            <div class="extra-info">Tiene estacionamiento</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#" class="btn btn-primary btn-rounded btn-outline-primary btn-block btn-reset mb-5">Editar dirección</a>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-checkbox-reset mb-3">
+                            <input type="checkbox" class="custom-control-input" id="accept-term">
+                            <label class="custom-control-label" for="accept-term"><a href="#" class="link-blue">Acepto los términos y condiciones</a></label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#" class="btn btn-primary btn-rounded btn-block btn-reset text-white" data-toggle="modal" data-target="#edit-session-modal">Guardar cambios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Footer Start-->
+<footer>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-sm-6 col-md-3">
+                <h4 class="footer-title text-uppercase">SERVICIOS</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">Maquillaje</a>
+                    </li>
+                    <li>
+                        <a href="#">Peinado</a>
+                    </li>
+                    <li>
+                        <a href="#">Manicure</a>
+                    </li>
+                    <li>
+                        <a href="#">Cejas y Pestañas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h4 class="footer-title text-uppercase">SOBRE AMEIZ</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">¿Qué es Ameiz?</a>
+                    </li>
+                    <li>
+                        <a href="#">¿Cómo funciona?</a>
+                    </li>
+                    <li>
+                        <a href="#">Conviértete en Ameizer</a>
+                    </li>
+                    <li>
+                        <a href="#">Trabaja con nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h4 class="footer-title text-uppercase">AYUDA A</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="#">Políticas de Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos y condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h4 class="footer-title text-uppercase">SUSCRÍBETE</h4>
+                <div class="input-group mb-3 subscribe-form">
+                    <input type="text" class="form-control" placeholder="ejemplo@mail.com">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary text-uppercase" type="button">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/logo-footer.svg" class="logo-footer"> Creado con mucho ♥︎ | Copyright © Ameiz Inc.
+                    2018
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End -->
+
+<!--Profile Client Modal Start-->
+<div class="modal modal-custom fade" tabindex="-1" role="dialog" id="edit-session-modal">
+    <div class="modal-dialog container" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="service-title mt-35 mb-35 ">Estás agregando una nueva dirección</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-25">
+                                <label for="calle">*Calle</label>
+                                <input type="text" class="form-control form-control-reset form-control-primary" id="calle">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group mb-25">
+                                <label for="numero">*Número</label>
+                                <input type="text" class="form-control form-control-reset form-control-primary" id="numero">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group mb-25">
+                                <label for="depto">Depto / Casa</label>
+                                <input type="text" class="form-control form-control-reset form-control-primary" id="depto">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-25">
+                                <label for="comuna">*Comuna</label>
+                                <input type="text" class="form-control form-control-reset form-control-primary" id="comuna">
+                            </div>
+                        </div>
+                        <div class="col-md-6 align-self-md-center">
+                            <div class="custom-control custom-checkbox custom-checkbox-reset mt-2">
+                                <input type="checkbox" class="custom-control-input" id="accept">
+                                <label class="custom-control-label" for="accept">Tiene estacionamiento</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="modal-p">* Campos obligatorios</p>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                    <a class="btn btn-reset btn-primary btn-rounded text-white btn-block mb-4" href="#" data-toggle="modal" data-target="#success-modal">Guardar Cambios</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Profile Client Modal End-->
+
+<!--Cart Modal Start-->
+<div class="modal modal-custom fade" tabindex="-1" role="dialog" id="success-modal">
+    <div class="modal-dialog container" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="text-center row">
+                    <div class="col-md-8 mx-auto">
+                        <i class="fa fa-check-circle fa-fw check-icon mb-3 mt-4"></i>
+                        <p class="modal-p mb-45">
+                            Has cambiado tu horario de el servicio de <strong>Cejas, ondulado y tinte</strong>
+                            a las 18:30 hrs
+                        </p>
+                    </div>
+                    <div class="col-md-8 mx-auto mb-4">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <a class="btn btn-reset btn-primary btn-rounded text-white btn-block mb-4" href="#" >Aceptar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Cart Modal End-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+  $(function () {
+
+    moment.updateLocale('es', {
+      weekdaysMin : ["Lu", "Ma", "M", "Ju", "V", "S", "Do"],
+      week : {
+        dow : 0 // Sunday is the first day of the week
+      }
+    });
+    $('#datetimepicker6').datetimepicker({
+      format: 'MM/DD/YYYY',
+      inline: true,
+      locale: 'es',
+      icons: {
+        time: 'fa fa-clock-o',
+        date: 'fa fa-calendar',
+        up: 'fa fa-chevron-up',
+        down: 'fa fa-chevron-down',
+        previous: 'fa fa-caret-down',
+        next: 'fa fa-caret-down',
+        today: 'fa fa-calendar-check-o',
+        clear: 'fa fa-trash',
+        close: 'fa fa-close'
+      }
+    });
+  });
+</script>
+</body>
+</html>
